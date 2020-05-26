@@ -1,0 +1,69 @@
+ctrl + n 新建文本文档
+ctrl + s 保存文档
+
+github.com
+全球最大的软件资源开发共享平台/社区
+
+邮箱：wyfy008811@163.com
+密码：wyfy0088
+
+github.com
+用户名：wyfy0088
+密码：wyfy0011
+邮箱：wyfy008811@163.com
+
+闭源  /  开源
+版本控制工具   oschina.com/github.com/gitlab.com
+git
+
+git命令：
+//授权本地电脑生成密钥
+ssh-keygen -t rsa -C '邮箱地址'
+
+1.//配置git本地用户名
+git config  --global  user.name 'github的用户名'
+
+2.//查看git本地配置好的用户
+git config user.name
+
+3.//配置git邮箱
+git config --global user.email 'wyfy008811@163.com'
+
+4.//查看配置邮箱
+git config user.email
+
+
+lunix基础命令：
+//查看当前文件夹内文件
+ls
+//查看文件属性  详细权限等
+ls -l
+//创建并写入内容
+例1：echo '需要添加的内容'>1.txt(注：文件名)
+例2：echo '<html>123123</html>'>2.html
+注意：
+>     覆盖
+>>    追加内容
+touch 需要创建的文件名字：创建空白文件
+mkdir 需要创建文件夹的名称：创建文件夹
+rm    删除
+ls -a  查看所有文件
+
+git 仓库：
+// 初始化一个本地 git 仓库:当前文件夹位置生成.git  文件夹
+git  init
+
+//查看当前仓库情况
+git status
+
+//添加文件到缓存区
+git add xxx
+
+//提交  到缓存区并添加注释
+git commit -m '注释内容'
+
+//指定远程段仓库地址
+git remote add origin git@github.com:wyfy0088/git1.git
+
+//推送到远程端
+git push -u origin master
